@@ -30,6 +30,8 @@ $(document).ready(function(){
   data.inches = $('#inches').val();
   data.address = $('#street').val() + " "+ $('#city').val() +" "+ $('#zipcode').val();
 
+  bootbox.alert("Your order was submitted!");
+
   $.ajax({
     type: 'POST',
     data: JSON.stringify(data),
@@ -38,7 +40,7 @@ $(document).ready(function(){
                 success: function(data) {
                     console.log('success');
                     console.log(JSON.stringify(data));
-                    bootbox.alert("Your order was submitted!");
+                    
                 }
             });
 

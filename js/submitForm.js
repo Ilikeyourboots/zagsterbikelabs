@@ -30,7 +30,7 @@ $(document).ready(function(){
   data.inches = $('#inches').val();
   data.address = $('#street').val() + " "+ $('#city').val() +" "+ $('#zipcode').val();
 
-  bootbox.alert("Your order was submitted!");
+
 
   $.ajax({
     type: 'POST',

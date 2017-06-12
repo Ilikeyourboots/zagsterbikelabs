@@ -1,0 +1,24 @@
+{
+  "name": "zagster_renting",
+  "version": "1.0.0",
+  "description": "A webpage for leasing zagster bikes",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elyza Agosta",
+  "license": "ISC",
+  "engines": {
+    "node": "6.2.0"
+  },
+  "dependencies": {
+    "ajax-request": "1.2.2",
+    "body-parser": "1.17.2",
+    "bootstrap": "3.3.7",
+    "bootstrap-select": "1.12.2",
+    "express": "4.15.3",
+    "jquery": "3.2.1",
+    "nodemailer": "4.0.1"
+  }
+}

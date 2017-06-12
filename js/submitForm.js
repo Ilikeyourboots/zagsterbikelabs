@@ -38,6 +38,7 @@ $(document).ready(function(){
                 success: function(data) {
                     console.log('success');
                     console.log(JSON.stringify(data));
+                    bootbox.alert("Your order was submitted!");
                 }
             });
 

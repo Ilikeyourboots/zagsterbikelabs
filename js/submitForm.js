@@ -21,7 +21,7 @@ $(document).ready(function(){
   console.log($('#startDate').text());
 
   data.startDate = $('#startDate').val();
-  data.sendDate = $('#endDate').val();
+  data.endDate = $('#endDate').val();
 
   data.name = $('#name').val();
   data.email = $('#email').val();

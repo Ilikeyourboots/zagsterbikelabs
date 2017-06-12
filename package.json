@@ -15,6 +15,7 @@
   "dependencies": {
     "ajax-request": "1.2.2",
     "body-parser": "1.17.2",
+    "bootbox": "4.4.0",
     "bootstrap": "3.3.7",
     "bootstrap-select": "1.12.2",
     "express": "4.15.3",

@@ -47,8 +47,7 @@ app.post('/endpoint', function(req, res){
 
   var mailOptions = {
     from: 'zagsterbikesleasing@gmail.com',
-    //to: 'bostonbikerentals@gmail.com',
-    to : 'zagsterbikesleasing@gmail.com',
+    to: 'bostonbikerentals@gmail.com',
     subject: 'New Bike Lease',
     text: JSON.stringify(req.body)
   };

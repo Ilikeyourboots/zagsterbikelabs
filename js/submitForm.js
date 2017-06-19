@@ -19,8 +19,8 @@ $(document).ready(function(){
     data.summer = true;
   }
 
-  data.startDate = $('#startDate').val();
-  data.sendDate = $('#endDate').val();
+  data.startDate = $('#dateStart').val();
+  data.sendDate = $('#dateEnd').val();
 
   data.name = $('#name').val();
   data.email = $('#email').val();

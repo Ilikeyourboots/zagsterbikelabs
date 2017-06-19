@@ -18,7 +18,6 @@ $(document).ready(function(){
   if($('.summer').is(':checked')){
     data.summer = true;
   }
-  console.log($('#startDate').text();
 
   data.startDate = $('#startDate').val();
   data.sendDate = $('#endDate').val();

@@ -20,7 +20,7 @@ $(document).ready(function(){
   }
 
   data.startDate = $('#dateStart').val();
-  data.sendDate = $('#dateEnd').val();
+  data.endDate = $('#dateEnd').val();
 
   data.name = $('#name').val();
   data.email = $('#email').val();

@@ -34,7 +34,7 @@ $(document).ready(function(){
     type: 'POST',
     data: JSON.stringify(data),
         contentType: 'application/json',
-                url: 'http://localhost:3000/endpoint',            
+                url: '/endpoint',            
                 success: function(data) {
                     console.log('success');
                     console.log(JSON.stringify(data));

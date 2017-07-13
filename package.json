@@ -10,7 +10,7 @@
   "author": "Elyza Agosta",
   "license": "ISC",
   "engines": {
-    "node": "6.2.0"
+    "node": "6.11.1"
   },
   "dependencies": {
     "ajax-request": "1.2.2",

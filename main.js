@@ -40,18 +40,18 @@ app.post('/endpoint', function(req, res){
   var transporter = nodemailer.createTransport({
   service: 'gmail',
     auth: {
-      user: 'zagsterbikesleasing@gmail.com',
+      user: 'bostonbikerentals@gmail.com',
       pass: process.env.emailPass
     }
   });
 
   var mailOptions = {
-    from: 'zagsterbikesleasing@gmail.com',
+    from: 'bostonbikerentals@gmail.com',
     to: 'bostonbikerentals@gmail.com',
-    subject: 'New Bike Lease',
+    subject: 'New Bike Lease: ' + req.body.name,
     text: JSON.stringify(req.body)
   };
-
+  // Send emial with information to bostonbikerentals
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
@@ -59,6 +59,24 @@ app.post('/endpoint', function(req, res){
       console.log('Email sent: ' + info.response);
     }
   });
+
+  // Send confirmation email
+  var mailOptions2 = {
+    from: 'bostonbikerentals@gmail.com',
+    to: req.body.email,
+    subject: 'Zagster Bike Labs Confirmation Email',
+    text: 'Thanks for your rental order! \nWe are processing your request and will send your invoice and rental agreement shortly. \n Have a great day!'
+  }
+
+  transporter.sendMail(mailOptions2, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+
 });
 
 

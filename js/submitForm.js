@@ -19,8 +19,8 @@ $(document).ready(function(){
     data.summer = true;
   }
 
-  data.startDate = $('#startDate').val();
-  data.endDate = $('#endDate').val();
+  data.startDate = $('#dateStart').val();
+  data.endDate = $('#dateEnd').val();
 
   data.name = $('#name').val();
   data.email = $('#email').val();
@@ -36,11 +36,10 @@ $(document).ready(function(){
     type: 'POST',
     data: JSON.stringify(data),
         contentType: 'application/json',
-                url: 'https://shrouded-tor-84747.herokuapp.com/endpoint',            
+                url: '/endpoint',
                 success: function(data) {
-                    console.log('success');
-                    console.log(JSON.stringify(data));
-                    
+                  console.log('success');
+                  console.log(JSON.stringify(data));   
                 }
             });
 

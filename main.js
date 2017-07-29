@@ -41,7 +41,7 @@ app.post('/endpoint', function(req, res){
   service: 'gmail',
     auth: {
       user: 'zagsterbikesleasing@gmail.com',
-      pass: 'ZagsterBikes124!'
+      pass: process.env.emailPass
     }
   });
 

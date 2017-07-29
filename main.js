@@ -40,7 +40,7 @@ app.post('/endpoint', function(req, res){
   var transporter = nodemailer.createTransport({
   service: 'gmail',
     auth: {
-      user: 'bostonbikerentals@gmail.com',
+      user: 'zagsterbikesleasing@gmail.com',
       pass: process.env.emailPass
     }
   });
